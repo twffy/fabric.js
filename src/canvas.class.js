@@ -190,6 +190,7 @@
       this._initWrapperElement();
       this._createUpperCanvas();
       this._initEventListeners();
+      this.selectionDashArray = this.selectionDashArray.slice(0);
 
       this.freeDrawingBrush = fabric.PencilBrush && new fabric.PencilBrush(this);
 
