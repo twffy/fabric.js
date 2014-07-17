@@ -155,6 +155,7 @@
      */
     _initStatic: function(el, options) {
       this._objects = [];
+      this.viewportTransform = this.viewportTransform.slice(0);
 
       this._createLowerCanvas(el);
       this._initOptions(options);
